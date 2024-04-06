@@ -5,10 +5,10 @@
 
 new (class {
     constructor() {
-        if(location.host == "app.memrise.com" && location.pathname == "/aprender/learn") {
+        if(location.host == "community-courses.memrise.com" && location.pathname == "/aprender/learn") {
             alert("Hacks enabled successfully!\n\n(c) 2024 CrazyH - Memrise Hacks");
             this.setup();
-        } else if(location.host == "app.memrise.com" && location.pathname.startsWith("/community/course/")) {
+        } else if(location.host == "community-courses.memrise.com" && location.pathname.startsWith("/community/course/")) {
             var jsonData = {
                 questions: {},
                 answers: {}
