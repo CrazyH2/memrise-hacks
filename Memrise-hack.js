@@ -16,8 +16,8 @@ new (class {
             var domElements = document.querySelectorAll(".row .things > .thing");
 
             for (const element of domElements) {
-                var col_a = element.querySelector(".col_a > div").innerText.slice(0, -1);
-                var col_b = element.querySelector(".col_b > div").innerText.slice(0, -1);
+                var col_a = element.querySelector(".col_a > div").innerText;//.slice(0, -1);
+                var col_b = element.querySelector(".col_b > div").innerText;//.slice(0, -1);
                 jsonData.questions[col_a] = col_b;
                 jsonData.answers[col_b] = col_a;
             };
