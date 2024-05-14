@@ -54,6 +54,7 @@ new (class {
         var choices = document.querySelector('h2[data-testid="learn-prompt-text"]').parentElement.parentElement.childNodes[1].childNodes;
         for (const element of choices) {
             var txt = element.childNodes[0].childNodes[1].childNodes[0].innerText;
+            if(txt == answer) console.log(txt);
             if(txt == answer) element.childNodes[0].style.background = "rgb(250, 183, 0)";
             if(txt == answer) element.childNodes[0].style.borderColor = "rgb(208, 152, 0)";
             if(txt == answer) element.childNodes[0].style.boxShadow = "0 4px 0 rgb(208, 152, 0)";
